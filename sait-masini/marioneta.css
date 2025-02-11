@@ -1,0 +1,95 @@
+#marioneta {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 150px;
+    z-index: 1000;
+    animation: miscareOrizontala 5s linear infinite; /* Mișcare continuă pe orizontală */
+}
+
+.corp {
+    width: 50px;
+    height: 70px;
+    background-color: blue;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mana {
+    width: 20px;
+    height: 50px;
+    background-color: lightblue;
+    position: absolute;
+    animation: miscareMâini 2s ease-in-out infinite;
+}
+
+.mana-stanga {
+    left: -30px;
+    top: 20px;
+    transform: rotate(-20deg);
+}
+
+.mana-dreapta {
+    right: -30px;
+    top: 20px;
+    transform: rotate(20deg);
+}
+
+.picior {
+    width: 20px;
+    height: 50px;
+    background-color: lightblue;
+    position: absolute;
+    bottom: 0;
+    animation: miscarePicioare 2s ease-in-out infinite;
+}
+
+.picior-stang {
+    left: 15px;
+}
+
+.picior-drept {
+    right: 15px;
+}
+
+/* Animație pentru brațe */
+@keyframes miscareMâini {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+/* Animație pentru picioare */
+@keyframes miscarePicioare {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Animație pentru mișcarea orizontală a marionete */
+@keyframes miscareOrizontala {
+    0% {
+        transform: translateX(0); /* Începe de la poziția inițială */
+    }
+    50% {
+        transform: translateX(200px); /* Mergi 200px spre dreapta */
+    }
+    100% {
+        transform: translateX(0); /* Revino la poziția inițială */
+    }
+}
+
+

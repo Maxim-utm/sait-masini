@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative; 
+    width: 100%;
+    bottom: 0;
+}
+
+.car-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-title {
+    margin-bottom: 20px; 
+    
+}
+
+.car-title h2 {
+    font-size: 2em; 
+    color: #333; 
+    border-bottom: 2px solid #007bff; 
+    padding-bottom: 10px; 
+    width: 100%; 
+}
+
+.car-items {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.car-item {
+    display: flex;
+    flex-direction: column; 
+    margin: 10px; 
+    padding: 10px; 
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 220px; 
+}
+@media (max-width: 768px) {
+    .car-item {
+        width: 100%; 
+    
+    }
+}
+
+.car-item img {
+    width: 100%; 
+    height: auto; 
+
+}
+
+.register {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #340aa8;
+}
+
+
+
+
+
